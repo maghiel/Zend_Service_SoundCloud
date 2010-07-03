@@ -1,18 +1,39 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Zend Framework
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://framework.zend.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@zend.com so we can send you a copy immediately.
+ *
+ * @category   Zend
+ * @package    Zend_Service
+ * @subpackage SoundCloud_Auth_Adapter
+ * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id:$
  */
 
 /**
- * Description of AdapterInterface
- *
- * @author Maghiel Dijksman <mail@mdijksman.nl>
+ * Interface for SoundCloud auth adapters
+ * 
+ * @category   Zend
+ * @package    Zend_Service 
+ * @subpackage SoundCloud_Auth_Adapter
+ * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @author     Maghiel Dijksman <mail@mdijksman.nl>
+ * @version    $Id:$
  */
-class AdapterInterface
+interface Zend_Service_SoundCloud_Auth_Adapter_AdapterInterface
 {
-    //put your code here
+    public function setCredentials(array $credentials);    
+    
+    public function login();
 }
-
-?>
